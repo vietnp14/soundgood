@@ -2,7 +2,7 @@ import { useState } from "react";
 import Image from 'next/image';
 import VolumeUp from '../../../images/volume-up.png';
 
-const Volume = ({ onClick }) => {
+function Volume({ onClick }) {
   const [volumeValue, setVolumeValue] = useState(50);
 
   return (

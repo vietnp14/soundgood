@@ -15,7 +15,7 @@ const OptionMap = {
   Productivity: ['', '', ''],
 };
 
-const VolumeContextProvider = ({ children }) => {
+function VolumeContextProvider({ children }) {
   const [currentListening, setCurrentListening] = useState([]);
 
   const handleAddListening = useCallback((title) => {

@@ -19,7 +19,7 @@ const buttons = [
   },
 ];
 
-const Introduction = () => {
+function Introduction() {
   const {
     setRelaxListening,
     setFocusListening,

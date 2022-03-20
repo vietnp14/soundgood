@@ -69,7 +69,7 @@ const items = [
   },
 ];
 
-const Item = ({ title, imageElement }) => {
+function Item({ title, imageElement }) {
   const [hovering, setHovering] = useState(false);
   const {
     currentListening,
@@ -105,7 +105,8 @@ const Item = ({ title, imageElement }) => {
   )
 }
 
-const Main = () => (
+function Main() {
+  return (
   <div className="main">
     <Introduction />
 
@@ -121,6 +122,7 @@ const Main = () => (
       }
     </div>
   </div>
-);
+  );
+}
 
 export default Main;

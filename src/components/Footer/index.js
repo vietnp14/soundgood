@@ -1,7 +1,7 @@
 import React from "react";
 
-const Footer = () => (
-  // <div className="wrapper-footer">
+function Footer() {
+  return (
     <div className="footer">
       <div className="footer__description">
         Mix different sounds and create your perfect sound environment to work and relax. We provide background sounds that help to mask annoying noises in order to keep you sane, improve your focus and boost your productivity.
@@ -20,7 +20,7 @@ const Footer = () => (
         </div>
       </div>
     </div>
-  // </div>
-);
+  );
+}
 
 export default Footer;
