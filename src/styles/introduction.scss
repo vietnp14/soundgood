@@ -1,0 +1,38 @@
+.introduction {
+  text-align: center;
+  margin: 48px 0;
+
+  &__title {
+    width: 60%;
+    margin: 0 auto;
+
+    font-size: 48px;
+    line-height: 57.6px;
+    font-weight: var(--font-bold);
+  }
+
+  &__buttons {
+    margin-top: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    &-item {
+      cursor: pointer;
+      background-color: #ECF3FF;
+      padding: 8px 16px;
+      border-radius: 20px;
+
+      font-size: 16px;
+      line-height: 24px;
+
+      border: 2px solid transparent;
+
+      &:hover {
+        border-color: #276EF1;
+      }
+    }
+  }
+}

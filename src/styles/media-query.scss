@@ -1,0 +1,35 @@
+/* Desktop Screen */
+@mixin desktop {
+	@media only screen and (min-width: 1200px) {
+		@content;
+	}
+}
+
+/* Landscape Tablet */
+@mixin landscape-tablet {
+	@media only screen and (min-width: 1024px) {
+		@content;
+	}
+}
+
+/* Portrait Tablet */
+@mixin tablet {
+	@media only screen and (min-width: 600px) {
+		@content;
+	}
+}
+
+
+/* Mobile Screen */
+@mixin mobile {
+	@media only screen and (max-width: 600px) {
+		@content;
+	}
+}
+
+/* Mobile Small Screen */
+@mixin small-mobile {
+	@media only screen and (max-width: 330px) {
+		@content;
+	}
+}
