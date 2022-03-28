@@ -1,4 +1,5 @@
 const path = require('path');
+
 const imageExtensionRegexp = /\.(png|jpe?g|gif)$/i;
 
 module.exports = {
@@ -16,9 +17,11 @@ module.exports = {
         type: 'asset/resource',
         generator: {
           filename: 'static/images/[name][contenthash:4][ext]',
-        }
+        },
       },
     ];
+
+    config.module.strictExportPresence = true;
 
     //Remove nextjs default image loader
     config.module.rules.pop();
@@ -27,4 +30,4 @@ module.exports = {
 
     return config;
   },
-}
+};
